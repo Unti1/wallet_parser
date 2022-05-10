@@ -68,9 +68,8 @@ class Avito_Watcher(Thread):
             "data": [
                 {"range": "1 list!A1:D3",
                 "majorDimension": "ROWS",
-                "values": [
-                            sheet_values
-                        ]}
+                "values": sheet_values
+                 }
             ]
         }).execute()
         print('[INFO] Работа с Google таблицей завершена')
